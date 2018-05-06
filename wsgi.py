@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, render_template
 from fortune import get_fortune
 
 app = Flask(__name__)
@@ -7,4 +7,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return '<pre>' + get_fortune() + '<pre>'
+    return render_template('index.html', fortune=get_fortune())
