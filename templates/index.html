@@ -4,94 +4,47 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
     <meta property="og:title" content="Fortune App">
     <meta name="twitter:title" content="Fortune App">
     <meta name="author" content="Jeronimo Martinez Sanchez">
     <meta property="og:image" content="https://rz0r.net/img/22042.jpg">
     <meta name="twitter:image" content="https://rz0r.net/img/22042.jpg">
-    <meta name="twitter:card" content="{{fortune}}">
+    <meta name="twitter:card" content="{{ fortune }}">
     <meta name="twitter:site" content="@rz0r">
     <meta name="twitter:creator" content="@rz0r">
     <meta property="og:url" content="https://rz0r.net/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fortune App">
-
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <style>
-        a,
-        a:focus,
-        a:hover {
-            color: #fff;
-        }
-
-        html,
-        body {
-            height: 100%;
-            background-color: #333;
-        }
-
-        body {
-            display: -ms-flexbox;
-            display: flex;
-            color: #fff;
-            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-        }
-
         pre {
-            color: #fff;
-        }
-
-        .masthead {
-            margin-bottom: 2rem;
-        }
-
-        .masthead-brand {
-            margin-bottom: 0;
-        }
-
-        @media (min-width: 48em) {
-            .masthead-brand {
-                float: left;
-            }
-            .nav-masthead {
-                float: right;
-            }
-        }
-
-        .mastfoot {
-            color: rgba(255, 255, 255, .5);
+            border: none;
         }
     </style>
+
     <title>Fortune</title>
 </head>
 
 <body>
-    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-                <h3 class="masthead-brand">Fortune</h3>
-            </div>
-        </header>
-
-        <main role="main" class="inner">
-            <div class="row">
-                <div class="col">
-                    <pre>{{fortune}}</pre>
-                </div>
-            </div>
-        </main>
-
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <a href="https://github.com/jms/glowing-memory" target="_blank">Github Repo</a>
-            </div>
-        </footer>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <h3>Fortune</h3>
+            <pre>
+            {{ fortune }}
+            </pre>
+        </div>
     </div>
+    <div class="row">
+        <div class="column">
+            <a href="https://github.com/jms/glowing-memory" target="_blank">Github Repo</a>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
