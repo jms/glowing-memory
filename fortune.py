@@ -74,5 +74,5 @@ def get_fortune():
     fortune_file = os.path.join(prefix, get_random_topic(cookies))
     data = load_fortune_file(fortune_file)
     fortune = get_random_fortune(data)
-    app.logger.info(load_fortune_file.cache_info())
+    app.logger.debug(load_fortune_file.cache_info())
     return fortune
